@@ -1,0 +1,3125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+   <!-- Bootstrap and Font Awesome css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>newdecembercanigan</title>
+
+<style>
+@font-face {
+    font-family: "logieFont";
+    src: url(Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'logieDistrict';
+    src: url(DistTh__.otf);
+  }
+
+/* End Testimonials Options */
+
+.testimonials {
+  padding: 80px 0;
+}
+
+@media(max-width: 991px) {
+  .price {
+    padding: 40px 0;
+  }
+}
+
+.testimonials .tes-desc {
+  margin-bottom: 40px;
+}
+
+.testimonials .client-say {
+  background-color: #F5f5f5;
+  color: #8e8f93;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px
+}
+
+.testimonials .client-say:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #F5f5f5 transparent transparent;
+  position: absolute;
+  bottom: -28px;
+  left: 26px;
+  z-index: 999999;
+}
+
+.testimonials .media-heading {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media(max-width: 991px) {
+  .testimonials .media {
+    margin-bottom: 20px;
+  }
+}
+
+.testimonials .media-body p {
+  color: #a9aaac
+}
+/* End Testimonials Options */
+
+/* Start Stylish */
+
+.stylish {
+  background: url("https://github.com/Oaik/Axit/blob/master/img/stylish.jpg?raw=true") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFF
+}
+
+.stylish .overlay {
+  background-color: rgba(0,0,0,.6);
+  min-height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+@media(max-width: 991px) {
+  .stylish .overlay {
+    padding: 30px 0;
+  }
+}
+
+.stylish .stylish-desc {
+  color: #CCC
+}
+
+.stylish .stylish-btn {
+  margin: 30px auto;
+  display: block;
+  padding: 8px 20px;
+  border: 2px solid #FFF;
+  background-color: transparent;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+.stylish .stylish-btn:hover {
+  background-color: #ff8b38;
+  border-color: transparent;
+}
+
+.stylish .head-border-center:after {
+  background-color: #fff;
+}
+
+/* End Stylish */
+
+/* Start Contact */
+
+.contact-us {
+  padding: 80px 0;
+}
+
+@media(max-width: 991px) {
+  .contact-us {
+    padding: 30px 0;
+  }
+}
+
+.contact-us .contact-desc {
+  color: #8e8f93;
+  margin-bottom: 40px
+}
+
+.contact-us form input[type="text"],
+.contact-us form input[type="email"] {
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0
+}
+
+.contact-us form textarea {
+  height: 178px;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+  resize: none;
+}
+
+.contact-us .contact-btn {
+  margin: 30px auto;
+  display: block;
+  padding: 8px 20px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  background-color: #ff8b38;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.stylish .stylish-btn:hover {
+  background-color: #ff8b38;
+  border-color: transparent;
+}
+
+/* End Contact */
+
+/* Start Footer */
+footer {
+  background-color: #000;
+  color: #EEE;
+  padding: 20px;
+  font-size: 18px;
+}
+/* End Footer */
+
+/* start framework */
+
+.head-border:after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  margin: 25px 0;
+  background-color: #ff8b38;
+}
+
+@media(max-width: 991px) {
+  .head-border:after {
+    margin: 25px auto;
+  }
+}
+
+.head-border-center:after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  margin: 25px auto;
+  background-color: #ff8b38;
+}
+
+@media (max-width: 767px) {
+  .text-center-xs {
+    text-align: center
+  }
+}
+
+/* end framework */
+
+/* ### start Social ### */
+
+.social {
+  padding: 10px;
+  -webkit-box-shadow: -2px -5px 13px #000;
+  -moz-box-shadow: -2px -5px 13px #000;
+  -o-box-shadow: -2px -5px 13px #000;
+  box-shadow: -2px -5px 13px #000;
+}
+
+
+
+.social h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.social p {
+  color: #a1a1a1;
+  line-height: 1.4
+}
+
+.social i {
+  color: #CCC;
+  margin: 20px 15px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+}
+
+@media (max-width: 991px) {
+  .social {
+    text-align: center
+  }
+  .social h4 {
+    margin-bottom: 10px;
+  }
+  .social i {
+    margin: 10px 15px;
+  }
+
+}
+
+.social .fa-facebook:hover {
+  color: #3b5998
+}
+.social .fa-twitter:hover {
+  color: #1da1f2
+}
+.social .fa-google-plus:hover {
+  color: #dd4b39
+}
+.social .fa-pinterest:hover {
+  color: #bd081c
+}
+.social .fa-instagram:hover {
+  color: #405de6
+}
+.social .fa-stumbleupon:hover {
+  color: #eb4924
+}
+.social .fa-rss:hover {
+  color: #f26522
+}
+
+/* ### End Social ### */
+
+/* ### Start Tabs ### */
+
+.tabs {
+  padding: 80px 0;
+  background-color: #F5f5f5;
+}
+@media(max-width: 991px) {
+  .tabs {
+    text-align: center
+  }
+}
+.tabs .tab-switch li {
+  background-color: #333;
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
+  height: 110px;
+  line-height: 110px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tabs .tab-switch li.active,
+.tabs .tab-switch li:hover {
+  background-color: #FF8b38;
+}
+
+.tabs .tabs-content div:not(.tab-one) {
+  display: none
+}
+
+.tabs .tabs-content h3 {
+  margin-top: 0;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 991px) {
+  .tabs .tabs-content h3 {
+    margin: 20px 0 30px
+  }
+}
+
+.tabs .tabs-content .lead {
+  line-height: 1.6;
+  font-size: 18px;
+  color: #7e7e7e;
+}
+
+.tabs .tabs-content button {
+  background-color: #ff8b38;
+  color: #FFF;
+}
+
+/* ### End Tabs ### */
+
+/* ### Start Sublist ### */
+
+.sublist {
+  padding: 80px 0
+}
+
+@media(max-width: 991px) {
+  .sublist {
+    padding: 40px 0;
+    text-align: center;
+  }
+}
+
+.sublist .sub-img {
+  margin-top: 50px
+}
+
+.sublist .sublist-head {
+  font-weight: bold
+}
+
+.sublist .sublist-desc {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.sublist .list-icon {
+  margin-bottom: 30px
+}
+
+.sublist .list-icon i {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff8b38;
+  line-height: 36px;
+  color: #ff8b38;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+@media(max-width: 991px) {
+  .sublist .list-icon i {
+    float: none !important;
+    margin: 10px 0;
+  }
+}
+
+.sublist .list-icon .info-text {
+  width: calc(100% - 70px);
+}
+
+@media(max-width: 991px) {
+  .sublist .list-icon .info-text {
+    float: none;
+    width: 100%;
+  }
+}
+
+.sublist .list-icon .info-text h4 {
+  font-weight: bold
+}
+/* ### End Sublist ### */
+
+/* ### Start Standard ### */
+
+
+.standard {
+  padding: 80px 0;
+  background-color: #F5f5f5;
+}
+
+@media(max-width: 991px) {
+  .standard {
+    padding: 40px 0;
+    text-align: center;
+  }
+}
+
+.standard .standard-head {
+  font-weight: bold;
+  margin-top: 50px
+}
+
+.standard .standard-desc {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+.featured-box {
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.featured-box .box-content {
+    border-top: 4px solid #0077ed;
+    padding: 20px 15px;
+    position: relative;
+    top: 0px;
+}
+.icon-featured {
+    background: red none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #000;
+    display: inline-block;
+    font-size: 40px;
+    height: 110px;
+    line-height: 110px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    width: 110px;
+    z-index: 1;
+}
+.box-content svg {
+    fill: #0077ed;
+}
+.flexbox {display: flex;}
+@media (max-width: 767px) {
+	.flexbox{
+		display: table;
+	}
+	div[class*='item']{
+	    margin-top: 20px;
+	}
+}
+
+#herot { background-image: url(http://www.action-door.com/wp-content/uploads/2016/04/Banners2.jpg);
+	background-attachment: none;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+		 background-color: #345;background-position: center;
+		 height: 44vh;
+		 width: 100%;
+		 padding: 0; 
+		 margin-top: 2.3vh;}
+
+
+		 .map {
+  width: 700px;
+  height: 380px;
+  margin: calc(50vh - 190px) auto;
+  box-shadow: 0 0 40px -10px black;
+  background: rgb(240, 240, 240);
+  font-family: 'Montserrat', sans-serif;
+  max-width: calc(100vw - 60px)
+}
+
+#map {
+  width: 65%;
+  height: 380px;
+  display: inline-block
+}
+
+.map-c {
+  float: right;
+  width: 35%;
+  height: 100%;
+  padding: 25px;
+  box-sizing: border-box
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+  color: rgb(60, 60, 70);
+  font-size: 28px
+}
+
+p {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 30px
+}
+
+.det {
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-family: 'logieDistrict' !important;
+  color: #000 !important;
+  letter-spacing: 1px;
+}
+
+#holder>i {
+  float: left;
+  font-size: 18px !important;
+  margin: 0 8px 0 0
+}
+
+button {
+  margin: 15px 4px;
+  padding: 13px 9px;
+  display: inline-block;
+  cursor: pointer;
+  background: none;
+  color: #546973;
+  border: 2px solid #78909C;
+  transition: all 0.3s;
+  border-radius: 8px;
+  outline:0
+}
+
+#holder>button:hover {
+  border-color: rgb(90, 90, 90);
+  color: rgb(90, 90, 90)
+}
+
+#holder>button:after {
+  content: '';
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-size: 11px;
+  margin-top: 8px
+}
+
+.center1>.fa-facebook:after {
+  content:'facebook';
+  margin:8px 13px 0;
+}
+.center1.fa-twitter:after {
+  content:'twitter';
+  margin:8px 13px 0;}
+
+@media only screen and (max-width: 720px) {
+  .map {
+    height: 450px;
+    margin: calc(50vh - 225px) auto;
+    overflow: hidden
+  }
+  #map {
+    width: 100%;
+    height: 200px;
+  }
+  .map-c {
+    float: right;
+    width: 100%;
+  }
+  button {
+    float: right;
+    margin-top: -75px
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  
+  h1 {
+    margin-bottom:20px
+  }
+  button {
+    float: none;
+    margin-top: 10px
+  }
+  .det {
+    margin-bottom: 9px
+  }
+
+
+  #logo1 {margin-top: -20px !important;}
+  #logo2 {margin-left: -37% !important;}
+  #holder{margin-top: 10px !important;}
+.mobb {min-width: 300px !important;}
+#texthero {opacity: 0;}
+}
+
+
+
+
+.hader {
+  position: relative;
+  width: 100%;
+}
+
+.hader .style_nav {
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+
+.hader .style_nav .style_brand {
+  padding-top: 23px;
+}
+
+
+/* Shutter Out Horizontal */
+
+.navbar-default .navbar-nav > li > a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background-color: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-bottom: 1px solid transparent;
+  color: white!important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
+.navbar-default .navbar-nav > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  r-bottom: 2px solid #000;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  color: #000;
+  transition: ease 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:active {
+  color: #000;
+  transition: ease 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover:before,
+.navbar-default .navbar-nav > li > a:focus:before,
+.navbar-default .navbar-nav > li > a:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transition: ease 0.5s;
+}
+
+.hader .nav.navbar-nav.pull-right {
+  margin-top: 2%;
+}
+
+.video-part-content .carousel-caption h1 {
+  font-size: 50px;
+}
+
+.video-part-content .carousel-caption p {
+  font-size: 20px;
+}
+
+.affix {
+  width: 100%;
+  transition: ease 0.5s;
+  background: rgba(11, 25, 45, 0.93)!important;
+  opacity: 0.8;
+  border-bottom: 2px solid #5775bd !important;
+}
+
+.navbar-default.affix .navbar-nav > li > a {
+  color: #333;
+}
+
+.btn-info {
+  background: #5674bc;
+  border: 1px solid #5674bc;
+  border-radius: 0px;
+  transition: ease 0.5s;
+}
+
+.btn-info {
+  color: #5674bc;
+  transition: ease 0.5s;
+}
+
+.full-width {
+  width: 100%;
+  float: left;
+}
+
+.video-part-content .btn-info:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  transition: ease 0.5s;
+  background: transparent;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-nav > li > a {
+  padding-bottom: 6px;
+  padding-top: 15px;
+}
+
+.btn-info {
+  background: #5674bc none repeat scroll 0 0;
+  border: 1px solid #5674bc;
+  border-radius: 0;
+  color: #fff;
+  transition: all 0.5s ease 0s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #132134;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.dropdown-content a:hover {
+  color: #FFA726;
+  text-decoration: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #132134!important;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*START SLIDER CSS  */
+
+
+/*  */
+
+
+/*  */
+
+.slider_item1 {
+  min-height: 700px;
+}
+
+.slider_bg_1 {
+  background-image: url("http://commonpixel.com/themes/edgar/images/examples/photo_02.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.slider_bg_2 {
+  background-image: url("http://commonpixel.com/themes/edgar/images/examples/slideshow_01.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.slider_bg_3 {
+  background-image: url("http://commonpixel.com/themes/edgar/images/examples/slideshow_03.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay_background {
+  height: 700px;
+  width: 100%;
+  background: rgba(11, 25, 45, 0.4);
+}
+
+.description {
+  margin-top: 250px;
+}
+
+.title {
+  color: #fff;
+}
+
+.title p {
+  margin: 0 0 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.title h1 {
+  font-weight: 600;
+  margin-bottom: 80px;
+  font-size: 50px;
+  color: #fff;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 28px;
+  background: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+.button.primary {
+  background: #ffa726;
+  color: #fff;
+}
+
+.button.primary:hover {
+  background: #0b192d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button.large {
+  padding: 10px 35px;
+}
+
+.button.transparent {
+  background: rgba(255, 255, 255, 0.2);
+  outline: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  margin-left: 20px;
+}
+
+.button.transparent:hover {
+  background: #0b192d;
+  outline: 1px solid #0b192d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button.large {
+  padding: 10px 35px;
+}
+
+.title .break {
+  display: block;
+}
+
+element.style {}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 30px!important;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #FFA726!important;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #0B192D!important;
+  border-radius: 0px!important;
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 15px!important;
+  margin: 0;
+  background-color: #0B192D!important;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/*END SLIDER CSS  */
+
+
+/*  */
+
+
+/*  */
+
+
+/* START SOLUTION SECTION */
+
+.sectionTitle p {
+  text-transform: uppercase;
+  color: #ffa726;
+  font-weight: 300;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
+  line-height: 1;
+  position: relative;
+}
+
+.sectionTitle .title {
+  color: #23344b;
+  font-size: 2.2em;
+  line-height: normal;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.iconBox3 {
+  padding-left: 40px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.iconBox3 .icon {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 1.4em;
+  color: #ffa726;
+}
+
+.iconBox3 h5 {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #23344b;
+  line-height: 1.4;
+}
+
+.iconBox3 p {
+  margin-bottom: 0;
+}
+
+#solution {
+  background-color: #F3F8FA;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* END SOLUTION SECTION */
+
+
+/*  */
+
+
+/*  */
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:767px) and (min-width:103px) {
+  .title h1 {
+    font-weight: 600;
+    margin-bottom: 80px;
+    font-size: 30px;
+    color: #fff;
+  }
+  .button.transparent {
+    background: rgba(255, 255, 255, 0.2);
+    outline: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* TABBED SLIDER */
+
+.iconTabs .nav1 a {
+  position: relative;
+  padding: 15px 20px 20px 60px;
+  color: #51556a;
+  background: #f3f8fa;
+  display: block;
+  margin-bottom: 10px;
+  -moz-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.iconTabs .nav1 a .icon {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 1.5em;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconTabs .nav1 a h6 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: .85em;
+  -moz-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #23344b;
+  line-height: 1.4;
+}
+
+.iconTabs .nav1 a p {
+  margin-bottom: 0;
+  font-size: .85em;
+}
+
+.iconTabs .nav1 a.active,
+.iconTabs .nav1 a:hover {
+  background: #ffa726;
+  color: #fff;
+}
+
+.iconTabs .nav1 a.active,
+.iconTabs .nav1 a:hover {
+  background: #ffa726;
+  color: #fff;
+}
+
+.mBase25 {
+  margin-bottom: 25px;
+}
+
+.mBase25 img {
+  width: 100%;
+}
+
+.sectionTitle p {
+  text-transform: uppercase;
+  color: #ffa726;
+  font-weight: 300;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
+  line-height: 1;
+  position: relative;
+}
+
+.sectionTitle .title {
+  color: #23344b;
+  font-size: 2.2em;
+  line-height: normal;
+  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #23344b;
+  line-height: 1.4;
+}
+
+.progressBarWrap {
+  margin-top: 80px;
+}
+
+.progressBar {
+  margin-bottom: 60px;
+  margin-top: 30px;
+  background: #f3f8fa;
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+}
+
+.progressBar .wrap {
+  width: 0;
+  position: relative;
+}
+
+.progressBar .inner {
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #ffa726;
+}
+
+.progressBar .wrap .no {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  font-weight: bold;
+}
+
+.progressBar .info {
+  position: absolute;
+  bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  font-size: .9em;
+  left: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #23344b;
+}
+
+.itemList li {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.itemList i {
+  color: #ffa726;
+  font-size: 1em;
+  margin-right: 10px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px!important;
+}
+
+.check_desc {
+  color: #23344b;
+  font-size: .98em;
+  line-height: normal;
+  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #23344b;
+  line-height: 1.4;
+}
+
+.core_values {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #23344b;
+  line-height: 1.4;
+}
+
+.core_para {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 1.6em;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  color: #23344b;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 28px;
+  background: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 28px;
+  background: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+.button.primary {
+  background: #ffa726;
+  color: #fff;
+}
+
+.button.primary:hover {
+  background: #0b192d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.set_slider_padding {
+  padding-top: 70px;
+}
+
+#tabbed_slider {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+/*  */
+
+
+/* TABBED SLIDER */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+
+/* start servicees section */
+
+.sectionTitle p {
+  text-transform: uppercase;
+  color: #ffa726;
+  font-weight: 300;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
+  line-height: 1;
+  position: relative;
+}
+
+.sectionTitle.white .title {
+  color: #fff;
+}
+
+.sectionTitle.white p::after {
+  background: #ccc;
+}
+
+.sectionTitle p::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 15px;
+  height: 1px;
+  width: 20px;
+  background: #a1a8b4;
+}
+
+.service_item {
+  background: rgba(11, 25, 45, 0.5);
+  color: #fff;
+  padding: 30px 30px 30px 80px;
+  position: relative;
+  -moz-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+.service_item i {
+  color: #ffa726;
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.elem:nth-child(-n+3) {
+  margin-bottom: 20px;
+}
+
+.service_item h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.service_item p {
+  margin-bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+.service_item:hover i {
+  color: white;
+}
+
+.service_item:hover {
+  background: rgba(255, 167, 38, .8);
+  color: white;
+}
+
+.parallax {
+  background-image: url("https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax .inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: rgba(11, 25, 45, 0.8);
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* END SERVICES SECTION */
+
+
+/*  */
+
+
+/*  */
+
+
+/* START GALLERY SECTION */
+
+
+/*===========================================*/
+
+
+/
+/* =======================================
+General
+========================================*/
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block
+}
+
+* html .clearfix {
+  height: 1%
+}
+
+.nopadding {
+  padding: 0
+}
+
+.nopaddingleft {
+  padding-left: 0;
+  margin-left: -20px;
+}
+
+.nomargin {
+  margin: 0
+}
+
+.highlight {
+  color: #A4A4A4
+}
+
+.spacer {
+  padding-top: 100px
+}
+
+.midspacer {
+  padding-top: 50px
+}
+
+span.lighter {
+  font-family: 'Montserrat Light';
+  font-weight: 100;
+}
+
+
+/* Portfolio
+===========================================*/
+
+.content-area {
+  padding: 6% 0;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 30px;
+  margin-bottom: 13px!important;
+}
+
+.portfolio-item h4 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.portfolio-item span {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.hover-bg {
+  position: absolute;
+  background: rgba(11, 25, 45, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hover-txt {
+  padding: 30px 30px 40px 30px;
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+
+.portfolio-item:hover .hover-bg {
+  opacity: 1;
+}
+
+.portfolio-item:hover .hover-bg .hover-txt {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+
+/* Layout Two 
+====================*/
+
+
+/* Index Style Two - Box Portfolio */
+
+.layout-two .portfolio-item {
+  margin: 0;
+}
+
+.layout-two .portfolio-item i {
+  font-size: 60px;
+}
+
+.layout-two .hover-txt {
+  text-align: center;
+  padding: 25% 0;
+  position: inherit;
+}
+
+.layout-two .hover-bg {
+  padding: 20px;
+}
+
+.border {
+  border: 4px solid #F0EBEB;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.layout-two .hover-txt,
+.layout-two .hover-txt h4,
+.layout-two .hover-txt span {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+
+.layout-two .hover-txt:hover,
+.layout-two .hover-txt:hover h4,
+.layout-two .hover-txt:hover span {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.center {
+  text-align: center;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* END GALLERY SECTION */
+
+
+/*  */
+
+
+/*  */
+
+
+/* START COUNTER SECTION */
+
+.p-y-2 {}
+
+.p-y-3 {}
+
+.m-b-1 {}
+
+.m-t-1 {}
+
+
+/*==========================================================
+                           counter section style
+            ============================================================*/
+
+#counter {
+  padding-bottom: 70px;
+}
+
+.main_counter_area {
+  overflow: hidden;
+}
+
+.main_counter_area .main_counter_content .single_counter {
+  background-image: url("https://images.unsplash.com/photo-1454694220579-9d6672b1ec2a?auto=format&fit=crop&w=632&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.counter_overlay {
+  background: rgba(11, 25, 45, 0.8);
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.main_counter_area .main_counter_content .single_counter i {
+  font-size: 36px;
+}
+
+.counter_text {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.statistic-counter {
+  font-size: 2.3em;
+  margin-bottom: 5px;
+  color: #ffa726;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* END COUNTER SECTION */
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+#carousel {
+  background-color: #F3F8FA;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.quote {
+  color: #FFA726;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/*-------------------------------*/
+
+
+/*    Carousel Fade Transition   */
+
+
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #e84a64;
+  border: none;
+}
+
+#fade-quote-carousel blockquote {
+  text-align: center;
+  border: none;
+}
+
+#fade-quote-carousel .profile-circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #FFA726!important;
+  border: none!important;
+}
+
+#fade-quote-carousel.carousel .carousel-indicators li {
+  display: inline-block;
+  width: 10px!important;
+  height: 10px!important;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.author h5 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #23344b;
+  line-height: 1.4;
+}
+
+.author p {
+  color: #FFA726;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.test_para {
+  font-family: 'Montserrat', sans-serif!important;
+  color: #0B192D;
+}
+
+.testimonial_overlay {}
+
+
+/*  */
+
+
+/*  */
+
+
+/*  */
+
+.sectionTitle.center {
+  text-align: center;
+}
+
+.article {
+  margin-bottom: 30px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.article .photo {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.article img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.article .info {
+  background: #f3f8fa;
+  padding: 25px;
+}
+
+.article p.cat {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: .8em;
+}
+
+.article .info p {
+  color: #9ca0b1;
+  font-size: 0.9em;
+}
+.article .info h5 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: inherit;
+  margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #23344b;
+    line-height: 1.4;
+}
+.article a {
+  color: #23344b;
+  display: block;
+}
+
+.article p.author {
+  margin-bottom: 0;
+}
+
+.article.quote {
+  text-align: center;
+  position: relative;
+  padding: 30px;
+  background: #ffa726;
+}
+
+.article:hover {
+  border-bottom: 3px solid #ffa726;
+}
+
+.article.quote:hover {
+  border-bottom: 3px solid #23344b;
+  text-decoration: none;
+}
+
+.article.quote:hover a {
+  text-decoration: none;
+}
+
+.article.quote .info {
+  padding: 0;
+  background: none;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.article:hover img {
+  -moz-transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  transform: scale(1.7);
+}
+
+.sectionBase {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.parallax {
+  color: #fff;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax .inner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: rgba(11, 25, 45, 0.8);
+}
+
+.pricingTop {
+  position: relative;
+  margin-top: -210px;
+}
+
+.pricing .item {
+  padding: 2em 2.5em;
+  text-align: left;
+  background: #f3f8fa;
+  border-top: 3px solid #ffa726;
+  margin-bottom: 30px;
+}
+
+.pricing .title {
+  font-size: 1em;
+  margin: 10px 0 20px 0;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #23344b;
+  line-height: 1.4;
+}
+
+.pricing .price {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.5em 0 0.75em;
+  border-top: 1px solid #dae4e8;
+  margin: 0;
+}
+
+.pricing .info {
+  padding: 0 0 1em 0;
+  color: #9CA0A9;
+  border-bottom: 1px solid #dae4e8;
+}
+
+.pricing .features {
+  margin: 0;
+  padding: 0.25em 0 2.5em;
+  list-style: none;
+  text-align: right;
+}
+
+.pricing .button {
+  display: block;
+  width: 100%;
+  transition: 2s;
+}
+
+.pricing .button:hover {
+  display: block;
+  width: 100%;
+  background-color: #ffa726;
+  ;
+}
+
+.button.dark {
+  background: #0b192d;
+  color: #fff;
+}
+
+.pricing .best {
+  background: #ffa726;
+  color: #fff;
+  padding: 3px 10px;
+  font-weight: 300;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .75em;
+  border-radius: 2px;
+  position: absolute;
+  left: 47px;
+  top: 2px;
+}
+
+button {
+  cursor: pointer;
+  overflow: visible;
+  border: none;
+  font-size: 1em;
+}
+
+.pricingTitle .sectionTitle {
+  padding-bottom: 170px;
+  padding-top: 30px;
+}
+
+
+/* carousel */
+
+.media-carousel {
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+
+
+/* Previous button  */
+
+.media-carousel .carousel-control.left {
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width: 40px;
+  margin-top: 30px
+}
+
+
+/* Next button  */
+
+.media-carousel .carousel-control.right {
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width: 40px;
+  margin-top: 30px
+}
+
+
+/* Changes the position of the indicators */
+
+.media-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+
+
+/* Changes the colour of the indicators */
+
+.media-carousel .carousel-indicators li {
+  background: #c0c0c0;
+}
+
+.media-carousel .carousel-indicators .active {
+  background: #333333;
+}
+
+.media-carousel img {
+  width: 40%;
+}
+
+
+/* End carousel */
+
+#company {
+  padding-top: 0px;
+  padding-bottom: 70px;
+}
+
+.company_image {
+  margin-top: 20px;
+}
+
+.mastFooter {
+  position: relative;
+  text-align: left;
+  color: #abacb1;
+  overflow: hidden;
+  background: url(https://images.unsplash.com/photo-1454694220579-9d6672b1ec2a?auto=format&fit=crop&w=632&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D) no-repeat 50% 50% / cover fixed;
+}
+
+.mastFooter .inner {
+  padding: 60px 0;
+  background: rgba(11, 25, 45, 0.85);
+}
+
+.mastFooter .banner {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 45px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.banner h3 {
+  margin-bottom: 5px;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.banner .button {
+  margin-top: 15px;
+}
+
+.mastFooter .logo {
+  margin-bottom: 30px;
+}
+
+.mastFooter .copyright {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.mastFooter h6 {
+  color: #fff;
+  margin: 0 0 40px 0;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4
+}
+
+.mastFooter .links,
+.mastFooter .contact {
+  margin: 0;
+}
+
+.mastFooter a {
+  color: #abacb1;
+}
+
+.links,
+.contact {
+  list-style-type: none;
+}
+
+.links li,
+.contact li {
+  margin-top: 10px;
+}
+
+.links li a:hover {
+  text-decoration: none;
+  color: #ffa726;
+  text-decoration: none;
+  -o-transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+.mastFooter .social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.mastFooter .social a {
+  color: #ffa726;
+}
+
+.mastFooter .social a:hover {
+  color: white;
+}
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+  
+<!-- MAIN MENU -->
+
+<header class="header">
+  <nav class="navbar navbar-default navbar-fixed-top" style="padding: 45px;height: 23vh;margin-left: 0;width: 100%;background-color: #0c0c0c;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false"  >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="logo-container">
+         <a class="navbar-brand" href="#" style="padding: 5px 7px 5px 7px;">
+         	<svg id='logo1' style='height:17vh;position: absolute;z-index: 999;padding: 0;margin-left: -27vw;margin-top: -3.25%;' viewBox="0 0 312 285" width="75%" height="50%"><defs id="SvgjsDefs1015"></defs><g id="main_text" rel="mainfill" name="main_text" feature="main_text" xmlns:name="mainText_mainfill" groupname="main_text" fill="#ffffff" transform="translate(-3.119542918904876, 126.01776513612973) scale(4.456490339511292)"><path d="M4.84 28.080000000000002 l-2.84 -12.02 q0.02 1.88 0.02 3.65 l0 3.65 l0 4.72 l-1.32 0 l0 -16.46 l1.82 0 l2.52 12.06 q-0.02 -1.7 -0.02 -3.33 l0 -3.33 l0 -5.4 l1.34 0 l0 16.46 l-1.52 0 z M7.800000000000001 28.080000000000002 l0 -16.46 l4.36 0 l0 1.54 l-2.84 0 l0 5.78 l2 0 l0 1.52 l-2 0 l0 6.12 l2.94 0 l0 1.5 l-4.46 0 z M13.44 28.080000000000002 l0 -16.46 l1.52 0 l0 16.46 l-1.52 0 z M16.48 28.080000000000002 l0 -16.46 l1.52 0 l0 14.96 l2.94 0 l0 1.5 l-4.46 0 z M22.060000000000002 16.18 l-0.3 -2.78 l0 -1.78 l1.4 0 l0 1.78 l-0.3 2.78 l-0.8 0 z M27.92 23.200000000000003 q0 -0.38 -0.02 -0.62 t-0.08 -0.42 t-0.16 -0.33 t-0.24 -0.33 q-0.3 -0.36 -0.6 -0.67 t-0.62 -0.62 t-0.65 -0.66 t-0.69 -0.79 q-0.4 -0.46 -0.47 -0.95 t-0.07 -1.19 l0 -2.46 q0 -2.72 2.56 -2.72 q1.38 0 1.94 0.67 t0.56 2.05 l0 3 l-1.42 0 l0 -2.8 q0 -0.62 -0.21 -1 t-0.83 -0.38 q-1.06 0 -1.06 1.18 l0 2.44 q0 0.52 0.07 0.76 t0.29 0.52 q0.6 0.76 1.23 1.34 t1.27 1.34 q0.22 0.26 0.36 0.52 t0.22 0.56 t0.11 0.68 t0.03 0.86 l0 2.36 q0 1.32 -0.59 2.02 t-1.97 0.7 q-1.34 0 -1.95 -0.7 t-0.61 -2.02 l0 -3.5 l1.46 0 l0 3.28 q0 0.64 0.23 1.04 t0.83 0.4 q0.58 0 0.83 -0.31 t0.25 -0.91 l0 -2.34 z  M38.300000000000004 28.180000000000003 l-0.5 -0.9 q-0.24 0.48 -0.78 0.73 t-1.22 0.25 q-0.54 0 -0.99 -0.14 t-0.78 -0.47 t-0.52 -0.87 t-0.19 -1.32 l0 -11.2 q0 -1.38 0.64 -2.1 t1.96 -0.72 t1.91 0.72 t0.59 2.1 l0 2.9 l-1.36 0 l0 -2.9 q0 -0.64 -0.26 -0.96 t-0.88 -0.32 q-0.58 0 -0.83 0.32 t-0.25 0.96 l0 11.2 q0 0.64 0.3 0.97 t0.76 0.33 q1.08 0 1.18 -1.18 l0 -3.74 l-1.26 0 l0 -1.44 l2.72 0 l0 7.78 l-0.24 0 z M44.04 28.080000000000002 l-0.36 -2.76 l-2.46 0 l-0.36 2.76 l-1.48 0 l2.26 -16.46 l1.78 0 l2.14 16.46 l-1.52 0 z M43.5 23.92 q-0.26 -2.12 -0.52 -4.19 t-0.5 -4.25 q-0.26 2.18 -0.53 4.25 t-0.55 4.19 l2.1 0 z M50.440000000000005 28.080000000000002 q-0.26 -1.94 -0.54 -3.77 t-0.62 -3.71 q-0.1 0.02 -0.18 0.02 l-0.18 0 l-0.82 0 l0 7.46 l-1.52 0 l0 -16.46 l2.5 0 q1.44 0 2.15 0.67 t0.71 2.29 l0 3.28 q0 1.8 -1.22 2.42 q0.4 2 0.74 3.93 t0.64 3.87 l-1.66 0 z M50.400000000000006 14.780000000000001 q0 -0.9 -0.26 -1.26 t-1.06 -0.36 l-0.98 0 l0 6.08 l1 0 q0.7 0 1 -0.33 t0.3 -1.03 l0 -3.1 z M57.36 28.080000000000002 l-0.36 -2.76 l-2.46 0 l-0.36 2.76 l-1.48 0 l2.26 -16.46 l1.78 0 l2.14 16.46 l-1.52 0 z M56.82 23.92 q-0.26 -2.12 -0.52 -4.19 t-0.5 -4.25 q-0.26 2.18 -0.53 4.25 t-0.55 4.19 l2.1 0 z M64.76 28.180000000000003 l-0.5 -0.9 q-0.24 0.48 -0.78 0.73 t-1.22 0.25 q-0.54 0 -0.99 -0.14 t-0.78 -0.47 t-0.52 -0.87 t-0.19 -1.32 l0 -11.2 q0 -1.38 0.64 -2.1 t1.96 -0.72 t1.91 0.72 t0.59 2.1 l0 2.9 l-1.36 0 l0 -2.9 q0 -0.64 -0.26 -0.96 t-0.88 -0.32 q-0.58 0 -0.83 0.32 t-0.25 0.96 l0 11.2 q0 0.64 0.3 0.97 t0.76 0.33 q1.08 0 1.18 -1.18 l0 -3.74 l-1.26 0 l0 -1.44 l2.72 0 l0 7.78 l-0.24 0 z M66.34 28.080000000000002 l0 -16.46 l4.36 0 l0 1.54 l-2.84 0 l0 5.78 l2 0 l0 1.52 l-2 0 l0 6.12 l2.94 0 l0 1.5 l-4.46 0 z"></path></g><g id="slogan_text" rel="mainfill" name="slogan_text" feature="slogan_text" xmlns:name="sloganText_mainfill" groupname="slogan_text" fill="#ffffff" transform="translate(57.427405347610794, 260.868772921212) scale(1.1451879396080107)"><path d="M5.8 9.74 q1.48 0 2.69 0.73 t1.91 1.93 l-3.1 0.96 q-0.3 -0.28 -0.68 -0.43 t-0.82 -0.15 q-0.46 0 -0.87 0.18 t-0.71 0.48 t-0.48 0.71 t-0.18 0.87 t0.18 0.87 t0.48 0.72 t0.71 0.49 t0.87 0.18 q0.52 0 0.98 -0.23 t0.76 -0.61 l-1.96 0 l0 -2.38 l5.44 0 q0.04 0.24 0.06 0.48 t0.02 0.48 q0 1.1 -0.42 2.07 t-1.14 1.69 t-1.68 1.13 t-2.06 0.41 t-2.06 -0.41 t-1.68 -1.13 t-1.14 -1.69 t-0.42 -2.07 t0.42 -2.06 t1.14 -1.68 t1.68 -1.13 t2.06 -0.41 z M14.76 10.06 l5.64 0 l2.66 9.94 l-3.78 0 l-0.32 -1.26 l-2.76 0 l-0.32 1.26 l-3.78 0 z M18.32 16.38 l-0.74 -2.76 l-0.74 2.76 l1.48 0 z M24.060000000000002 10.06 l5.26 0 l0.02 0 q0.68 0 1.27 0.26 t1.03 0.7 t0.7 1.03 t0.26 1.27 q0 0.88 -0.43 1.61 t-1.13 1.15 l2.24 3.9 l-4.02 0 l-1.62 -2.8 l0 2.82 l-3.58 0 l0 -9.94 z M28.340000000000003 13.940000000000001 q0.28 0 0.46 -0.18 t0.18 -0.46 t-0.18 -0.47 t-0.46 -0.19 l-0.7 0 l0 1.3 l0.68 0 l0.02 0 z M36.94 10.06 l5.64 0 l2.66 9.94 l-3.78 0 l-0.32 -1.26 l-2.76 0 l-0.32 1.26 l-3.78 0 z M40.5 16.38 l-0.74 -2.76 l-0.74 2.76 l1.48 0 z M51.54 9.74 q1.48 0 2.69 0.73 t1.91 1.93 l-3.1 0.96 q-0.3 -0.28 -0.68 -0.43 t-0.82 -0.15 q-0.46 0 -0.87 0.18 t-0.71 0.48 t-0.48 0.71 t-0.18 0.87 t0.18 0.87 t0.48 0.72 t0.71 0.49 t0.87 0.18 q0.52 0 0.98 -0.23 t0.76 -0.61 l-1.96 0 l0 -2.38 l5.44 0 q0.04 0.24 0.06 0.48 t0.02 0.48 q0 1.1 -0.42 2.07 t-1.14 1.69 t-1.68 1.13 t-2.06 0.41 t-2.06 -0.41 t-1.68 -1.13 t-1.14 -1.69 t-0.42 -2.07 t0.42 -2.06 t1.14 -1.68 t1.68 -1.13 t2.06 -0.41 z M61.34 17.46 l2.86 0 l0 2.54 l-6.36 0 l0 -9.94 l6.36 0 l0 2.54 l-2.86 0 l0 1.12 l2.86 0 l0 2.54 l-2.86 0 l0 1.2 z  M74.74000000000001 10.06 q1.02 0 1.93 0.39 t1.59 1.06 t1.07 1.58 t0.39 1.93 q0 1.04 -0.39 1.95 t-1.07 1.58 t-1.59 1.06 t-1.93 0.39 l-4.54 0 l0 -9.94 l4.54 0 z M74.52000000000001 13.120000000000001 l-0.98 0 l0 0.28 l0 3.24 l0 0.28 l0.98 0 q0.38 0 0.73 -0.15 t0.6 -0.4 t0.4 -0.6 t0.15 -0.75 q0 -0.38 -0.15 -0.73 t-0.4 -0.6 t-0.6 -0.41 t-0.73 -0.16 z M86.03999999999999 9.72 q1.08 0 2.05 0.42 t1.69 1.14 t1.14 1.68 t0.42 2.04 q0 1.1 -0.42 2.07 t-1.14 1.69 t-1.69 1.14 t-2.05 0.42 q-1.1 0 -2.07 -0.42 t-1.69 -1.14 t-1.14 -1.69 t-0.42 -2.07 q0 -1.08 0.42 -2.04 t1.14 -1.68 t1.69 -1.14 t2.07 -0.42 z M86.03999999999999 13.02 q-0.42 0 -0.78 0.16 t-0.64 0.43 t-0.44 0.63 t-0.16 0.76 q0 0.42 0.16 0.78 t0.44 0.64 t0.64 0.44 t0.78 0.16 q0.4 0 0.77 -0.16 t0.64 -0.44 t0.43 -0.64 t0.16 -0.78 q0 -0.4 -0.16 -0.76 t-0.43 -0.63 t-0.64 -0.43 t-0.77 -0.16 z M97.66 9.72 q1.08 0 2.05 0.42 t1.69 1.14 t1.14 1.68 t0.42 2.04 q0 1.1 -0.42 2.07 t-1.14 1.69 t-1.69 1.14 t-2.05 0.42 q-1.1 0 -2.07 -0.42 t-1.69 -1.14 t-1.14 -1.69 t-0.42 -2.07 q0 -1.08 0.42 -2.04 t1.14 -1.68 t1.69 -1.14 t2.07 -0.42 z M97.66 13.02 q-0.42 0 -0.78 0.16 t-0.64 0.43 t-0.44 0.63 t-0.16 0.76 q0 0.42 0.16 0.78 t0.44 0.64 t0.64 0.44 t0.78 0.16 q0.4 0 0.77 -0.16 t0.64 -0.44 t0.43 -0.64 t0.16 -0.78 q0 -0.4 -0.16 -0.76 t-0.43 -0.63 t-0.64 -0.43 t-0.77 -0.16 z M103.96000000000001 10.06 l5.26 0 l0.02 0 q0.68 0 1.27 0.26 t1.03 0.7 t0.7 1.03 t0.26 1.27 q0 0.88 -0.43 1.61 t-1.13 1.15 l2.24 3.9 l-4.02 0 l-1.62 -2.8 l0 2.82 l-3.58 0 l0 -9.94 z M108.24000000000001 13.940000000000001 q0.28 0 0.46 -0.18 t0.18 -0.46 t-0.18 -0.47 t-0.46 -0.19 l-0.7 0 l0 1.3 l0.68 0 l0.02 0 z  M119.18 10.06 l5.26 0 l0.02 0 q0.68 0 1.27 0.26 t1.03 0.7 t0.7 1.03 t0.26 1.27 q0 0.88 -0.43 1.61 t-1.13 1.15 l2.24 3.9 l-4.02 0 l-1.62 -2.8 l0 2.82 l-3.58 0 l0 -9.94 z M123.46000000000001 13.940000000000001 q0.28 0 0.46 -0.18 t0.18 -0.46 t-0.18 -0.47 t-0.46 -0.19 l-0.7 0 l0 1.3 l0.68 0 l0.02 0 z M132.9 17.46 l2.86 0 l0 2.54 l-6.36 0 l0 -9.94 l6.36 0 l0 2.54 l-2.86 0 l0 1.12 l2.86 0 l0 2.54 l-2.86 0 l0 1.2 z M136.76000000000002 10.06 l4.94 0 l0.02 0 q0.72 0 1.36 0.27 t1.12 0.75 t0.76 1.12 t0.28 1.38 q0 0.72 -0.28 1.36 t-0.76 1.12 t-1.12 0.76 t-1.36 0.28 l-0.04 0 l-1.34 0 l0 2.9 l-3.58 0 l0 -9.94 z M141.08 14.26 q0.3 0 0.5 -0.21 t0.2 -0.49 t-0.2 -0.49 t-0.5 -0.21 l-0.74 0 l0 1.4 l0.74 0 z M148.9 10.06 l5.64 0 l2.66 9.94 l-3.78 0 l-0.32 -1.26 l-2.76 0 l-0.32 1.26 l-3.78 0 z M152.46 16.38 l-0.74 -2.76 l-0.74 2.76 l1.48 0 z M158.20000000000002 10.06 l3.94 0 l0 9.94 l-3.94 0 l0 -9.94 l0 0 z M163.14000000000001 10.06 l5.26 0 l0.02 0 q0.68 0 1.27 0.26 t1.03 0.7 t0.7 1.03 t0.26 1.27 q0 0.88 -0.43 1.61 t-1.13 1.15 l2.24 3.9 l-4.02 0 l-1.62 -2.8 l0 2.82 l-3.58 0 l0 -9.94 z M167.42000000000002 13.940000000000001 q0.28 0 0.46 -0.18 t0.18 -0.46 t-0.18 -0.47 t-0.46 -0.19 l-0.7 0 l0 1.3 l0.68 0 l0.02 0 z"></path></g><g id="SvgjsG1021" rel="mainfill" name="symbol" feature="symbol" xmlns:name="symbol_mainfill" fill="#ffffff" transform="translate(87, 15.034364773727953) scale(5.727333333333333)"><g><g><path d="M23.964,3.32c-0.007-0.019-0.019-0.034-0.028-0.052c-0.019-0.035-0.04-0.069-0.066-0.099    c-0.015-0.017-0.032-0.031-0.049-0.046c-0.028-0.024-0.059-0.045-0.092-0.062c-0.021-0.011-0.041-0.021-0.064-0.029    c-0.013-0.005-0.024-0.014-0.038-0.017l-11.5-3c-0.082-0.021-0.17-0.021-0.252,0l-11.5,3C0.36,3.02,0.349,3.028,0.336,3.033    C0.313,3.041,0.293,3.051,0.272,3.062C0.238,3.079,0.208,3.1,0.18,3.124C0.163,3.139,0.146,3.153,0.131,3.169    c-0.027,0.03-0.047,0.063-0.066,0.099C0.055,3.286,0.044,3.301,0.036,3.32C0.014,3.376,0,3.436,0,3.5v20C0,23.776,0.224,24,0.5,24    h23c0.276,0,0.5-0.224,0.5-0.5v-20C24,3.436,23.986,3.376,23.964,3.32z M12,1.016L19.604,3H4.396L12,1.016z M6,23H3v-3h3V23z     M3,19v-2h2v2H3z M10,23H7v-2h3V23z M23,23h-7v-3h7V23z M23,19h-5v-2h5V19z M23,16h-5.5c-0.276,0-0.5,0.224-0.5,0.5V19h-1.5    c-0.276,0-0.5,0.224-0.5,0.5V23h-4v-2.5c0-0.276-0.224-0.5-0.5-0.5H7v-0.5C7,19.224,6.776,19,6.5,19H6v-2.5    C6,16.224,5.776,16,5.5,16h-3C2.224,16,2,16.224,2,16.5V23H1V13h22V16z M23,12H1v-2h22V12z M23,9H1V7h22V9z M23,6H1V4h22V6z"></path></g></g></g></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="main-menu" >
+      <ul class="nav navbar-nav navbar-right" style="margin-top: 3vh;position: relative;z-index: 999999;">
+        <li><a href="#home" class="page-scroll dark-grey mobb" style="background-color: #0c0c0c;color: #f8f8f8;">Home</a></li>
+        <li><a href="#work" class="page-scroll dark-grey mobb" style="background-color: #0c0c0c;color: #f8f8f8;">Work</a></li>
+        <li><a href="#services" class="page-scroll dark-grey mobb" style="background-color: #0c0c0c;color: #f8f8f8;">Services</a></li>
+        <li><a href="#contact" class="page-scroll dark-grey mobb" style="background-color: #0c0c0c;color: #f8f8f8;">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+
+<!-- HOME -->
+
+
+<section id="home" class="fullscreen background parallax"  data-img-width="1600" data-img-height="1064" data-diff="200">
+  <div class="container content-a">
+    <div class="home-inner-container content-b">
+      <div id="spacer" style="height: 23vh;"></div>
+      <div class="row">
+        <div class="col-xs-12 headline">
+         
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+    
+    </div> <!-- end home-inner-container -->
+  </div> <!-- end container -->
+
+
+<!-- WORK -->
+
+   
+
+
+	
+
+ <!-- Start Social media -->
+    <section class="social" style="box-shadow: none;">
+      <div class="container">
+        <div class="row">
+        	<div id="herot"> <a href="#" class="button primary mTop15 mBase25" style="margin-top: 36vh;margin-left: 2vw;background-color: #cc ">Call Now</a> <h3 id="texthero" style="padding: 5px 7px 5px 7px;font-size: 1em;max-width: 350px; letter-spacing: 2px;font-family: 'logieDistrict';float: right;color: #0b192d;background-color: #fff; ">Many families today use their garage door as the main entry point to their home. Often times, we may forget, or take for granted, the 300 independently moving parts and pieced required to safely raise and lower our garage door. Failure of any of these parts could potentially damage your entire garage door or garage door opener.</h3></div>
+
+        
+
+          <div class="col-md-12" style="display: block;margin: auto !important;background-color: #fff;">
+
+            <span style="margin-left: auto !important;background-color: #fff;">
+              <i class="fa fa-facebook fa-3x fa-fw"></i>
+            <i class="fa fa-twitter fa-3x fa-fw"></i>
+            <i class="fa fa-google-plus fa-3x fa-fw"></i>
+            <i class="fa fa-pinterest fa-3x fa-fw"></i>
+            <i class="fa fa-instagram fa-3x fa-fw"></i>
+            <i class="fa fa-stumbleupon fa-3x fa-fw"></i>
+            <i class="fa fa-rss fa-3x fa-fw"></i>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Social media -->
+<div id="holder" style="width: 100%;margin-top: -23vh;">
+	<div class="map">
+  <div id="map"></div>
+  <div class="map-c">
+    <h1>Neil's Garage </h1>
+    <p style="color: #0b192d; ">Neils Garage is a full service garage repair company yas yas yas yas yas</p>
+    <div class="det" style="font-family: 'logieDistrict';"><i class="fa fa-map-marker"><b style="font-family: 'logieDistrict' !important;color: #000;">&nbsp; 2716 West Cortez St. , 60622</b></i> </div>
+    <div class="det"><i class="fa fa-phone"></i> <b style="color: #0b192d;">312-555-5555</b></div>
+    <div class="det"><i class="fa fa-globe"></i> <b style="color: #0b192d;">www.neilsgarage.com</b></div>
+    <center class='center1'>
+      <button class="fa fa-facebook"></button>
+     
+    </center>
+  </div>
+</div>
+	
+
+</div>
+    
+    <!-- Start Sublist -->
+ <div id="holder2" style="width: 100%;height: 44vh; background-color: #456;">
+   
+
+  
+
+
+<section id="services" class="parallax">
+  <div class="inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 sectionTitle white">
+          <p>what we do</p>
+          <h2 class="title" style="letter-spacing: 1px;" >Professional Services</h2>
+        </div>
+        <div class="col-sm-4 rightAlign xsAlignReset">
+          <a href="#" class="button primary mTop15 mBase25">Call Now</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 elem aos-init aos-animate wow fadeInLeft" data-aos="zoom-in">
+          <div class="service_item">
+            <i class="fa fa-star"></i>
+            <h4>Garage Doors</h4>
+            <p>New Garage Doors &amp; Overhead Garage Doors</p>
+          </div>
+        </div>
+        <!-- end item 1 -->
+        <div class="col-md-4 col-sm-6 elem aos-init aos-animate wow fadeInUp" data-aos="zoom-in">
+          <div class="service_item">
+            <i class="fa fa-wrench"></i>
+            <h4>Garage Door Repair </h4>
+            <p>Garage Door Springs, Rollers, Cables, Hinges &amp; More</p>
+          </div>
+        </div>
+        <!-- end item 2 -->
+        <div class="col-md-4 col-sm-6 elem aos-init aos-animate wow fadeInRight" data-aos="zoom-in">
+          <div class="service_item">
+            <i class="fa fa-long-arrow-up"></i>
+            <h4>Garage Door Openers</h4>
+            <p>Craftsman Garage Openers &amp; Professional Installation</p>
+          </div>
+        </div>
+        <!-- end item 3 -->
+        <div class="col-md-4 col-sm-6 elem aos-init aos-animate wow fadeInDown" data-aos="fade-up">
+          <div class="service_item">
+            <i class="fa fa-ambulance"></i>
+            <h4>Emergency Repair</h4>
+            <p>Stuck? Broken? Call Now <a href="tel:#"> 312-555-5555</a><br><br></p>
+          </div>
+        </div>
+        <!-- end item 4 -->
+        <div class="col-md-4 col-sm-6 elem aos-init aos-animate wow fadeInRight" data-aos="fade-up">
+          <div class="service_item">
+            <i class="fa fa-key"></i>
+            <h4>Entry Doors</h4>
+            <p style="margin-top: -1.39em;">Choose from several types of doors from those on a budget or those who want a premium door with all the features.</p>
+          </div>
+        </div>
+        <!-- end item 5 -->
+        <div class="col-md-4 col-sm-6 elem aos-init aos-animate wow fadeInLeft" data-aos="fade-up">
+          <div class="service_item">
+            <i class="fa fa-info"></i>
+            <h4>Questions?</h4>
+            <p>Call us for estimates or special requests.</p>
+            <br>
+          </div>
+        </div>
+        <!-- end item 6 -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--======================================================================================================= -->
+<!--  =================================END  SERVICES SECTION================================================-->
+
+
+<!--======================================================================================================= -->
+
+
+<div id="tf-portfolio" class="content-area layout-two">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectionTitle center">
+          <p>Neils Garage</p>
+          <h2 class="title">Featured Work</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row nomargin">
+
+      <div class="col-md-3 col-sm-6 col-xs-12 nopadding">
+        <a href="#inline-1" data-gal="prettyPhoto[pp_gal]">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="border">
+                <div class="hover-txt">
+                  <i class="ion-ios-plus-empty"></i>
+                  <h4>Example</h4>
+                  <span>Example Describe</span>
+                </div>
+              </div>
+            </div>
+            <img src="https://image.freepik.com/free-photo/door_2564320.jpg" class="img-responsive" alt="...">
+          </div>
+        </a>
+
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-12 nopadding">
+        <a href="#inline-11" data-gal="prettyPhoto[pp_gal]">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="border">
+                <div class="hover-txt">
+                  <i class="ion-ios-plus-empty"></i>
+                  <h4>Example</h4>
+                  <span>example describe</span> /
+                  <span>Example</span>
+                </div>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1494441372960-6dce1eca6e57?auto=format&fit=crop&w=1048&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" class="img-responsive" alt="...">
+          </div>
+        </a>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-12 nopadding">
+        <a href="#inline-3" data-gal="prettyPhoto[pp_gal]">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="border">
+                <div class="hover-txt">
+                  <i class="ion-ios-plus-empty"></i>
+                  <h4>Example</h4>
+                  <span>Example describe</span>
+                </div>
+              </div>
+            </div>
+            <img src="https://image.freepik.com/free-photo/garage-door_21177532.jpg" class="img-responsive" alt="...">
+          </div>
+        </a>
+
+        <a href="#inline-6" data-gal="prettyPhoto[pp_gal]">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="border">
+                <div class="hover-txt">
+                  <i class="ion-ios-plus-empty"></i>
+                  <h4>Example</h4>
+                  <span>Describe</span> /
+                  <span>describe more</span>
+                </div>
+              </div>
+            </div>
+            <img src="https://image.freepik.com/free-photo/two-cars-garage_1426-466.jpg" class="img-responsive" alt="...">
+          </div>
+        </a>
+
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xs-12  nopadding">
+        <a href="#inline-3" data-gal="prettyPhoto[pp_gal]">
+          <div class="portfolio-item">
+            <div class="hover-bg">
+              <div class="border">
+                <div class="hover-txt">
+                  <i class="ion-ios-plus-empty"></i>
+                  <h4>Example</h4>
+                  <span>Example describe</span>
+                </div>
+              </div>
+            </div>
+            <img style="height: 56vh;" src="https://image.freepik.com/free-photo/aluminium-garage-doors_442-19316745.jpg" class="img-responsive" alt="...">
+          </div>
+        </a>
+
+        <a href="#inline-6" data-gal="prettyPhoto[pp_gal]">
+          <div class="portfolio-item set">
+            <div class="hover-bg">
+              <div class="border">
+                <div class="hover-txt">
+                  <i class="ion-ios-plus-empty"></i>
+                  <h4>Example</h4>
+                  <span>Example desribe</span> /
+                  <span>Example describe mmore</span>
+                </div>
+              </div>
+            </div>
+            <img src="" class="img-responsive" alt=" ">
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--  ================================= START GALLERY SECTION  SECTION================================================-->
+
+
+<!--======================================================================================================= -->
+<!--  ================================= END GALLERY  SECTION================================================-->
+
+
+<!--  =================================  START COUNTER SECTION================================================-->
+<!-- Here is the section -->
+
+<section id="counter" class="counter">
+  <div class="main_counter_area">
+    <div class="overlay p-y-3">
+      <div class="container">
+        <div class="row">
+          <div class="main_counter_content text-center white-text">
+            <div class="col-md-3">
+              <div class="single_counter p-y-2 m-t-1">
+                <div class="counter_overlay"> <i  style='padding: 5px 7px 5px 7px;' class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  <h2 class="statistic-counter">557</h2>
+                  <p class="counter_text">CLIENTS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="single_counter p-y-2 m-t-1">
+                <div class="counter_overlay"> <i  style='padding: 5px 7px 5px 7px;' class="fa fa-star" aria-hidden="true"></i>
+                  <h2 class="statistic-counter">3054</h2>
+                  <p class="counter_text">PROJECTS</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="commom_background_img">
+                <div class="single_counter p-y-2 m-t-1">
+                  <div class="counter_overlay"> <i  style='padding: 5px 7px 5px 7px;' class="fa fa-coffee" aria-hidden="true"></i>
+                    <h2 class="statistic-counter">4635</h2>
+                    <p class="counter_text">COFFEE CUPS</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+
+              <div class="single_counter p-y-2 m-t-1">
+                <div class="counter_overlay"> <i  style='padding: 5px 7px 5px 7px;' class="fa fa-child" aria-hidden="true"></i>
+                  <h2 class="statistic-counter">4810</h2>
+                  <p class="counter_text">HAPPY CUSTOMERS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of counter Section -->
+
+
+<!-- START TESTIMONIAL SECTION -->
+
+<section id="carousel">
+  <div class="testimonial_overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+          <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+              <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+              <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+              <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+              <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+              <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="item">
+                <div class="profile-circle"><img class="img-circle" src="http://commonpixel.com/themes/edgar/images/examples/user_02.jpg" alt="" /></div>
+                <blockquote>
+                  <div class="author">
+                    <h5>Aneta Proczuszki </h5>
+                    <p>New Home Owner</p>
+                  </div>
+                  <p class="test_para">When I bought my first house, I was determined to turn my garage in to a workshop space for arts and crafts for myself and my kids. One problem, the old garage door had to go. - it was a beat up door with a junky look to it. Time for an upgrade
+                  Once we started looking we also decided to get our front door replaced, as it wasn't the most secure. Neil's Garage repair service was very knowledgeable, which was great because phew, I had no idea where to start. Very professional with the fitting and installation. I'm very pleased to see my kids having a blast in the new space. Thanks again to Dan from the company to make it so simple</p>
+                </blockquote>
+              </div>
+              <div class="item">
+                <div class="profile-circle"><img class="img-circle" src="http://commonpixel.com/themes/edgar/images/examples/user_01.jpg" alt="" /></div>
+                <blockquote>
+                  <div class="author">
+                    <h5>Jackson Smith</h5>
+                    <p>Evanston, Chicago</p>
+                  </div>
+                  <p class="test_para">Just had our new garage door fitted by the guys at Neil's Garage. I was suprised Neil &amp; his partner showed up, most times companies end up sending workers, but I was pleased to know the owner Neil was hands on throughout the process - both did an excellent and professional job and we are very pleased with the result. Happy to endorse both the company and their fitters. Would highly recommend</p>
+                </blockquote>
+              </div>
+              <div class="active item">
+                <div class="profile-circle"><img class="img-circle" src="http://commonpixel.com/themes/edgar/images/examples/user_03.jpg" alt="" /></div>
+                <blockquote>
+                  <div class="author">
+                    <h5>Greg Weir</h5>
+                    <p>Building Owner</p>
+                  </div>
+                  <p class="test_para">Bryan performed the repair and was ready to show me he had finished in only about 40 minutes - doesn't get much better than that.</p>
+                </blockquote>
+              </div>
+              <div class="item">
+                <div class="profile-circle"><img class="img-circle" src="http://commonpixel.com/themes/edgar/images/examples/user_02.jpg" alt="" /></div>
+                <blockquote>
+                  <div class="author">
+                    <h5>Sarah Johnstone</h5>
+                    <p>Northwest Suburbs</p>
+                  </div>
+                  <p class="test_para">Our 32+ year-old wooden door was literally crumbling to pieces. Neil was available the same day we called and measured everthing. Of course, it wasn’t a standard size. Nothing in this house has been! He had us set up and with a shiny new one with a lock combination to boot! Great Deal. </p>
+                </blockquote>
+              </div>
+              <div class="item">
+                <div class="profile-circle"><img class="img-circle" src="http://commonpixel.com/themes/edgar/images/examples/user_01.jpg" alt="" /></div>
+                <blockquote>
+                  <div class="author">
+                    <h5>Robert Wellington</h5>
+                    <p>Lincoln Park, Chicago</p>
+                  </div>
+                  <p class="test_para">We've hired the Neil's Garage team for our last few projects and we've been extremely satisfied with the services they provided! Their excellent communication really sped up a process we thought would normally take a lifetime! A+</p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- END  TESTIMONILA SECTION -->
+<!--https://images.unsplash.com/photo-1494441372960-6dce1eca6e57?auto=format&fit=crop&w=1048&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D-->
+
+<!--  -->
+<section class="sectionBase container">
+  <div class="sectionTitle center">
+    <p>from the blog</p>
+    <h2 class="title">Recent news</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 wow fadeInUp">
+      <div class="article">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1482348072058-d15c8b91fcfd?auto=format&fit=crop&w=800&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Article image title"></div>
+        <div class="info">
+          <p class="cat">Dec 23, 2016 | Lifestyle</p>
+          <a href="#">
+            <h5>Keep Warm For the Holidays</h5>
+          </a>
+          <p class="author">By Jane Smith</p>
+        </div>
+      </div>
+      <!-- end item 1 -->
+    </div>
+    <div class="col-md-4 col-sm-6 wow fadeInUp">
+      <div class="article">
+        <div class="info">
+          <p class="cat">Dec 23, 2016 | Business</p>
+          <a href="#">
+            <h5>Why these tricks save money</h5>
+          </a>
+          <p class="author">By Nir Berko</p>
+        </div>
+      </div>
+      <!-- end item 2 -->
+      <div class="article quote">
+        <a href="#">
+          <div class="info">
+            <h5>5 lifehacks to keep your garage more organized.</h5>
+            <i class="fa fa-quote-right icon"></i>
+            <p class="author">By Robert McKee</p>
+          </div>
+        </a>
+      </div>
+      <!-- end item 3 -->
+    </div>
+    <div class="col-md-4 col-sm-12 wow fadeInUp">
+      <div class="article">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1494380523890-2c3c1a3ea750?auto=format&fit=crop&w=1051&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Article image title"></div>
+        <div class="info">
+          <p class="cat">Dec 23, 2016 | Business</p>
+          <a href="#">
+            <h5></h5>
+          </a>
+          <p class="author">By William Styron</p>
+        </div>
+      </div>
+      <!-- end item 4 -->
+    </div>
+  </div>
+</section>
+<!--  -->
+
+
+<!--  -->
+
+
+
+<!--  -->
+
+<footer class="mastFooter">
+  <div class="inner">
+    <!-- START banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Save Today With Neil's Garage | Quality Garage Door Repair</h3>
+            <p>Call today and we’ll get back to you for an estimate</p>
+          </div>
+          <div class="col-sm-4 rightAlign xsAlignReset">
+            <a href="tel:#" class="button primary large">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END banner -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="logo">
+            <a href="index.html"><img src="#" data-rjs="2" alt="My Company name"></a>
+          </div>
+          <p class="copyright">© Neil's Garage 2017. All rights reserved.</p>
+        </div>
+        <div class="col-sm-3">
+          <h6>Links</h6>
+          <ul class="links">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Latest news</a></li>
+            <li><a href="projects.html">Our projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h6>Find us here</h6>
+          <ul class="contact">
+            <li>
+              <i class="fa fa-envelope"></i> Email@mycompany.com
+            </li>
+            <li>
+              <i class="fa fa-phone"></i> 1 312 555 5555
+            </li>
+            <li>
+              <i class="fa fa-map-marker"></i> 2715 West Cortez Street, Chicago, IL USA
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-3" style="box-shadow: none; ">
+          <h6>Social</h6>
+          <ul class="social" style="box-shadow: none;margin-left: -1vw;">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+         
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--  -->
+
+
+<!--  -->
+<!-- Add this script before </body> -->
+
+
+
+<!--  ================================= END  COUNTER  SECTION================================================-->
+     
+           
+
+
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>"use strict";
+
+$(function () {
+  "use strict";
+
+  $(window).scroll(function () {
+    var navbar = $(".navbar");
+    if ($(window).scrollTop() >= navbar.height() ? navbar.addClass("scrolled") : navbar.removeClass("scrolled")) ;
+  });
+  // Tabs
+  $(".tabs li").click(function () {
+    // Add active class to active link
+    $(this).addClass("active").siblings().removeClass("active");
+    // Hide all divs on click
+    $(".tabs .tabs-content > div").hide();
+    //show div
+    $('.' + $(this).data("class")).show();
+  });
+});</script>
+<script>var myCenter = new google.maps.LatLng(41.900481, -87.695081);
+function initialize() {
+  var mapProp = {
+    center: myCenter,
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("map"), mapProp);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script>/*  */
+
+/*  */
+/* START SLIDER SCRIPY */
+(function() {
+  var Util,
+    __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  Util = (function() {
+    function Util() {}
+
+    Util.prototype.extend = function(custom, defaults) {
+      var key, value;
+      for (key in custom) {
+        value = custom[key];
+        if (value != null) {
+          defaults[key] = value;
+        }
+      }
+      return defaults;
+    };
+
+    Util.prototype.isMobile = function(agent) {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+    };
+
+    return Util;
+
+  })();
+
+  this.WOW = (function() {
+    WOW.prototype.defaults = {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true
+    };
+
+    function WOW(options) {
+      if (options == null) {
+        options = {};
+      }
+      this.scrollCallback = __bind(this.scrollCallback, this);
+      this.scrollHandler = __bind(this.scrollHandler, this);
+      this.start = __bind(this.start, this);
+      this.scrolled = true;
+      this.config = this.util().extend(options, this.defaults);
+    }
+
+    WOW.prototype.init = function() {
+      var _ref;
+      this.element = window.document.documentElement;
+      if ((_ref = document.readyState) === "interactive" || _ref === "complete") {
+        return this.start();
+      } else {
+        return document.addEventListener('DOMContentLoaded', this.start);
+      }
+    };
+
+    WOW.prototype.start = function() {
+      var box, _i, _len, _ref;
+      this.boxes = this.element.getElementsByClassName(this.config.boxClass);
+      if (this.boxes.length) {
+        if (this.disabled()) {
+          return this.resetStyle();
+        } else {
+          _ref = this.boxes;
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            box = _ref[_i];
+            this.applyStyle(box, true);
+          }
+          window.addEventListener('scroll', this.scrollHandler, false);
+          window.addEventListener('resize', this.scrollHandler, false);
+          return this.interval = setInterval(this.scrollCallback, 50);
+        }
+      }
+    };
+
+    WOW.prototype.stop = function() {
+      window.removeEventListener('scroll', this.scrollHandler, false);
+      window.removeEventListener('resize', this.scrollHandler, false);
+      if (this.interval != null) {
+        return clearInterval(this.interval);
+      }
+    };
+
+    WOW.prototype.show = function(box) {
+      this.applyStyle(box);
+      return box.className = "" + box.className + " " + this.config.animateClass;
+    };
+
+    WOW.prototype.applyStyle = function(box, hidden) {
+      var delay, duration, iteration;
+      duration = box.getAttribute('data-wow-duration');
+      delay = box.getAttribute('data-wow-delay');
+      iteration = box.getAttribute('data-wow-iteration');
+      return box.setAttribute('style', this.customStyle(hidden, duration, delay, iteration));
+    };
+
+    WOW.prototype.resetStyle = function() {
+      var box, _i, _len, _ref, _results;
+      _ref = this.boxes;
+      _results = [];
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        box = _ref[_i];
+        _results.push(box.setAttribute('style', 'visibility: visible;'));
+      }
+      return _results;
+    };
+
+    WOW.prototype.customStyle = function(hidden, duration, delay, iteration) {
+      var style;
+      style = hidden ? "visibility: hidden; -webkit-animation-name: none; -moz-animation-name: none; animation-name: none;" : "visibility: visible;";
+      if (duration) {
+        style += "-webkit-animation-duration: " + duration + "; -moz-animation-duration: " + duration + "; animation-duration: " + duration + ";";
+      }
+      if (delay) {
+        style += "-webkit-animation-delay: " + delay + "; -moz-animation-delay: " + delay + "; animation-delay: " + delay + ";";
+      }
+      if (iteration) {
+        style += "-webkit-animation-iteration-count: " + iteration + "; -moz-animation-iteration-count: " + iteration + "; animation-iteration-count: " + iteration + ";";
+      }
+      return style;
+    };
+
+    WOW.prototype.scrollHandler = function() {
+      return this.scrolled = true;
+    };
+
+    WOW.prototype.scrollCallback = function() {
+      var box;
+      if (this.scrolled) {
+        this.scrolled = false;
+        this.boxes = (function() {
+          var _i, _len, _ref, _results;
+          _ref = this.boxes;
+          _results = [];
+          for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+            box = _ref[_i];
+            if (!(box)) {
+              continue;
+            }
+            if (this.isVisible(box)) {
+              this.show(box);
+              continue;
+            }
+            _results.push(box);
+          }
+          return _results;
+        }).call(this);
+        if (!this.boxes.length) {
+          return this.stop();
+        }
+      }
+    };
+
+    WOW.prototype.offsetTop = function(element) {
+      var top;
+      top = element.offsetTop;
+      while (element = element.offsetParent) {
+        top += element.offsetTop;
+      }
+      return top;
+    };
+
+    WOW.prototype.isVisible = function(box) {
+      var bottom, offset, top, viewBottom, viewTop;
+      offset = box.getAttribute('data-wow-offset') || this.config.offset;
+      viewTop = window.pageYOffset;
+      viewBottom = viewTop + this.element.clientHeight - offset;
+      top = this.offsetTop(box);
+      bottom = top + box.clientHeight;
+      return top <= viewBottom && bottom >= viewTop;
+    };
+
+    WOW.prototype.util = function() {
+      return this._util || (this._util = new Util());
+    };
+
+    WOW.prototype.disabled = function() {
+      return !this.config.mobile && this.util().isMobile(navigator.userAgent);
+    };
+
+    return WOW;
+
+  })();
+
+}).call(this);
+
+
+wow = new WOW(
+  {
+    animateClass: 'animated',
+    offset: 100
+  }
+);
+wow.init();
+
+ 
+/*  */
+/*  */
+/*END SLIDER SCRIPT  */
+
+
+/* COUNTER */
+  // Counter 
+            jQuery('.statistic-counter').counterUp({
+                delay: 10,
+                time: 2000
+            });
+/* COUNTER */
+
+
+</script>
+</body>
+</html>
